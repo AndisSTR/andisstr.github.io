@@ -1,0 +1,101 @@
+// Import Styles
+
+@import 'colors';
+@import 'fonts';
+@import 'media_queries';
+
+// -----------------
+
+// Styles
+.navbar {
+    width:100%;
+    background:$white;
+    height: 92.51px;
+    display: flex;
+    padding: 0px;
+    position: relative;
+    @include tablet {
+        height: 74px;
+    }
+    @include mobile {
+        height: 43px;
+    }
+    .logo {
+        z-index: 2;
+        cursor: pointer;
+        text-decoration: none;
+        position: relative;
+        padding-left: 62px;
+        padding-top: -50px;
+        img{
+            width:159px;
+            @include mobile {
+                width:78px;
+            }
+        }
+    }
+    .navbar_menu {
+        width:100%;
+        display: flex;
+        float: left;
+        justify-content: space-between;
+        padding-left: 84px;
+        padding-right: 62px;
+        padding-top: 51px;
+        .navbar_hmenu {
+            display: none;
+            @include less_than_max_width {
+                display: block;
+                position: absolute;
+                right: 19px;
+                top: 35px;
+            }
+            @include mobile {
+                position: absolute;
+                right: 16px;
+                top: 16px;
+            }
+            img {
+                width: 15px;
+                height: 15px;
+            }
+        }
+        .navbar_menu_link {
+            padding: 0px 3px 3px 3px;
+            position: relative;
+            font-family: 'Montserrat', sans-serif;
+            font-style: normal;
+            font-weight: 500;
+            font-size: 1.125em;
+            line-height: 1.375em;
+            text-decoration: none;
+            color:$black;
+            transition: 0.5s;
+            &::after {
+                position: absolute;
+                content: "";
+                top: 70%;
+                left: 0;
+                width: 100%;
+                height: 3px;
+                background: $yellow;
+                transform: scaleX(0);
+                transform-origin: right;
+                transition: transform 0.5s;
+            }
+            &:hover {
+                font-weight:600;
+            }
+        
+            &:hover::after {
+                transform: scaleX(1);
+                transform-origin: left;
+            }
+            @include less_than_max_width {
+                    display: none;
+            }
+        }
+    }
+}
+
+// -----------------

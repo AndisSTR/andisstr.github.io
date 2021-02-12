@@ -1,0 +1,166 @@
+// Footer
+
+@import 'colors';
+@import 'fonts';
+@import 'media_queries';
+
+.footer {
+    background: $blue;
+    padding: 40px 62px 0 62px;
+    @include mobile {
+        padding: 40px 20px 0 20px;
+    }
+    .footer_wrap {
+        display: flex;
+        @include mobile {
+            flex-wrap: wrap;
+        }
+        justify-content: space-between;
+        .footer_menu{
+            a {
+                display: flex;
+                padding-bottom: 23px;
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 1.125em;
+                line-height: 1.375em;
+                text-decoration: none;
+                color: $white;
+            }
+            @include small_screen {
+                display: none;
+            }
+        }
+        .footer_logo {
+            @include mobile {
+                width: 280px;
+                padding-bottom: 25px;
+            }
+            img{
+                @include mobile {
+                    width: 100px;
+                    height: 100px;
+                }
+            }
+        }
+        .footer_bank_info{
+            @include small_screen {
+                display: none;
+            }
+        }
+        .footer_heading {
+            padding-bottom: 16px;
+            font-family: Montserrat;
+            font-weight: 500;
+            font-size: 1.5em;
+            line-height: 1.813em;
+            color: $white;
+            @include mobile {
+                padding-bottom: 30px;
+                font-size: 1.125em;
+                line-height: 1.3125em;
+            }
+        }
+        .footer_data, a {
+            padding-bottom: 16px;
+            font-family: Montserrat;
+            font-weight: 500;
+            font-size: 1.125em;
+            line-height: 1.375em;
+            color: $white;
+            text-decoration: none;
+            @include mobile {
+                padding-bottom: 10px;
+                font-size: 0.75em;
+                line-height: 0.9375em;
+            }
+        }
+        .footer_link_to_bank_data a {
+            display: none;
+            @include small_screen{
+                display: inline-block;
+                padding-bottom: 16px;
+                font-family: Montserrat;
+                font-weight: 700;
+                font-size: 1.125em;
+                line-height: 1.375em;
+                color: $white;
+                text-decoration: none;
+            }
+            @include mobile {
+                padding-bottom: 10px;
+                font-size: 0.875em;
+                line-height: 1.0625em;
+            }
+        }
+        .footer_contact_info {
+            text-align: right;
+            @include mobile {
+                width: 280px;
+                text-align: left;
+            }
+            .footer_icons {
+                padding-top: 52px;
+                @include mobile {
+                    padding: 35px 0;
+                    text-align: left;
+                }
+                img {
+                    @include mobile {
+                        width: 25px;
+                        height: 25px;
+                    }
+                }
+                .footer_fb_icon{
+                        padding-right: 29px;
+                        @include mobile {
+                            padding-right: 35px;
+                        }
+                }
+            }
+        }
+    }
+    .footer_policy {
+        width:100%;
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        .footer_policy_left,  .footer_policy_right, a {
+            padding-bottom: 13px;
+            font-family: Montserrat;
+            font-weight: 500;
+            font-size: 0.875em;
+            line-height: 1.063em;
+            color: $white;
+            text-decoration: none;
+            @include small_screen {
+                padding-bottom: 50px;
+            }
+            @include mobile {
+                padding-bottom: 0px;
+            }
+        }
+        .footer_policy_left{
+            width: 182px;
+            @include tablet {
+                width: 395px;
+            }
+            @include mobile {
+                width: 280px;
+                padding-bottom: 5px;
+            }
+        }
+        .footer_policy_right{
+            text-align: right;
+            @include mobile {
+                width: 280px;
+                text-align: left;
+                padding-bottom: 20px;
+            }
+        }
+    }
+}
+
+// -----------------

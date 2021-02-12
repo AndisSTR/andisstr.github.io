@@ -1,0 +1,79 @@
+// Import Styles
+
+@import 'colors';
+@import 'fonts';
+@import 'media_queries';
+
+// -----------------
+
+// Supporters
+.supporters {
+    height: 482px;
+    background: url("/assets/img/Subtract.png");
+    @include tablet {
+        height: 300px;
+        background-repeat: no-repeat;
+        background-size: auto 300px;
+    }
+    @include mobile {
+        height: 430px;
+        background-repeat: no-repeat;
+        background-size: auto 430px;
+    }
+    p {
+        padding:100px 0 64px 0;
+        text-transform: uppercase;
+        font-family: Oswald;
+        font-weight: 500;
+        font-size: 1.5em;
+        line-height: 2.25em;
+        text-align: center;
+        color: $blue;
+        @include tablet {
+            padding:56px 0 36px 0;
+        }
+    }
+    .supporters_box {
+        padding:0 168px;
+        display: flex;
+        justify-content: space-between;
+        .supporters_cell {
+            img{
+                width: 100%;
+                @include mobile {
+                    height: fit-content;
+                }
+            }
+        }
+        @include small_screen {
+            padding:0 124px;
+        }
+        @include tablet {
+            padding:0 80px;
+        }
+        @include mobile {
+            padding:0 22px;
+            flex-wrap: wrap;
+        }
+    }
+    @include mobile {
+        .supporters_box>div {
+            flex: 0 50%;
+        }
+    }
+    .supporters_bottom {
+        z-index: -1;
+        position:relative;
+        bottom: -108px;
+        height: 200px;
+        background: $blue;
+        @include tablet {
+            bottom: -20px;
+        }
+        @include mobile {
+            bottom: -50px;
+        }
+    }
+}
+
+// -----------------

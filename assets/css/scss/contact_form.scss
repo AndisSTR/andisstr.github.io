@@ -1,0 +1,164 @@
+// Import Styles
+
+@import 'colors';
+@import 'fonts';
+@import 'media_queries';
+
+// -----------------
+
+// Contact us Form
+.contact_us {
+    p {
+        text-transform: uppercase;
+        font-family: Oswald;
+        font-weight: 500;
+        font-size: 1.875em;
+        line-height: 2.75em;
+        text-align: center;
+        color: $blue;
+        margin-bottom: 44px;
+        @include mobile {
+            margin-bottom: 30px;
+        }
+    }
+    .contact_us_form {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 150px;
+        @include mobile {
+            padding:0 20px;
+            margin-bottom: 121px;
+        }
+        .form_imputs {
+            display: flex;
+            flex-direction: row;
+            width: 612px;
+            justify-content: space-between;
+            @include tablet {
+                width: 608px;
+            }
+            @include mobile {
+                flex-direction: column;
+                width: 280px;
+            }
+            input {
+                width: 296px;
+                height: 43px;
+                margin-bottom: 12px;
+                @include tablet {
+                    width: 294px;
+                    height: 40px;
+                }
+                @include mobile {
+                    width: 280px;
+                    height: 35px;
+                }
+            }
+        }
+        .input_phone {
+            width: 612px;
+            margin-bottom: 12px;
+            @include tablet {
+                width: 608px;
+            }
+            @include mobile {
+                width: 280px;
+            }
+            input {
+                width: 612px;
+                height: 43px;
+                @include tablet {
+                    width: 608px;
+                    height: 40px;
+                }
+                @include mobile {
+                    width: 280px;
+                    height: 35px;
+                }
+            }
+        }
+        .textarea_message {
+            width: 612px;
+            margin-bottom: 12px;
+            @include tablet {
+                width: 608px;
+            }
+            @include mobile {
+                width: 280px;
+                margin-bottom: 10px;
+            }
+            textarea {
+                width: 612px;
+                height: 232px;
+                resize: none;
+                @include tablet {
+                    width: 608px;
+                    height: 230px;
+                }
+                @include mobile {
+                    width: 280px;
+                    height: 150px;
+                }
+            }
+        }
+        input, textarea {
+            background: $grey_a;
+            padding: 12px;
+            border: 0px;
+            border-radius: 6px;
+            color: $blue;
+            font-size: 1.125em;
+            line-height: 1.375em;
+            letter-spacing: -0.015em;
+            @include mobile {
+                font-size: 0.875em;
+                line-height: 1.0625em;
+            }
+        }
+        .desc_area {
+            width: 612px;
+            text-align: left;
+            @include tablet {
+                width: 608px;
+            }
+            @include mobile {
+                width: 280px;
+            }
+        }
+        .form_desc, .form_check_desc {
+            font-family: Montserrat;
+            font-weight: normal;
+            font-size: 0.875em;
+            line-height: 1.063em;
+            @include mobile {
+                font-size: 0.75em;
+                line-height: 0.9em;
+            }
+        }
+        .form_check {
+            padding: 25px 0 50px 0;
+            display: flex;
+            width: 612px;
+            @include tablet {
+                width: 608px;
+            }
+            @include mobile {
+                padding: 10px 0 50px 0;
+                width: 280px;
+            }
+            .form_check_desc {
+                padding-left: 12px;
+                @include mobile {
+                    padding-left: 21px;
+                }
+            }
+            input[type=checkbox] {
+                background: $grey;
+                outline: 0;
+            }
+        }
+    }
+}
+// -----------------

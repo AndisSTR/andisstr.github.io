@@ -1,0 +1,126 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: url("/assets/fonts/Montserrat-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("/assets/fonts/Montserrat-Medium.ttf") format("truetype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Oswald';
+  src: url("/assets/fonts/Oswald-Medium.ttf") format("truetype");
+  font-weight: 500;
+}
+
+.supporters {
+  height: 482px;
+  background: url("/assets/img/Subtract.png");
+}
+
+@media screen and (max-width: 768px) {
+  .supporters {
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: auto 300px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .supporters {
+    height: 430px;
+    background-repeat: no-repeat;
+    background-size: auto 430px;
+  }
+}
+
+.supporters p {
+  padding: 100px 0 64px 0;
+  text-transform: uppercase;
+  font-family: Oswald;
+  font-weight: 500;
+  font-size: 1.5em;
+  line-height: 2.25em;
+  text-align: center;
+  color: #2f4858;
+}
+
+@media screen and (max-width: 768px) {
+  .supporters p {
+    padding: 56px 0 36px 0;
+  }
+}
+
+.supporters .supporters_box {
+  padding: 0 168px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.supporters .supporters_box .supporters_cell img {
+  width: 100%;
+}
+
+@media screen and (max-width: 640px) {
+  .supporters .supporters_box .supporters_cell img {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .supporters .supporters_box {
+    padding: 0 124px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .supporters .supporters_box {
+    padding: 0 80px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .supporters .supporters_box {
+    padding: 0 22px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .supporters .supporters_box > div {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 50%;
+            flex: 0 50%;
+  }
+}
+
+.supporters .supporters_bottom {
+  z-index: -1;
+  position: relative;
+  bottom: -108px;
+  height: 200px;
+  background: #2f4858;
+}
+
+@media screen and (max-width: 768px) {
+  .supporters .supporters_bottom {
+    bottom: -20px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .supporters .supporters_bottom {
+    bottom: -50px;
+  }
+}
+/*# sourceMappingURL=supporters.css.map */

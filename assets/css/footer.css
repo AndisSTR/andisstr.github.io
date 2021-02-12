@@ -1,0 +1,250 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: url("/assets/fonts/Montserrat-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("/assets/fonts/Montserrat-Medium.ttf") format("truetype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Oswald';
+  src: url("/assets/fonts/Oswald-Medium.ttf") format("truetype");
+  font-weight: 500;
+}
+
+.footer {
+  background: #2f4858;
+  padding: 40px 62px 0 62px;
+}
+
+@media screen and (max-width: 640px) {
+  .footer {
+    padding: 40px 20px 0 20px;
+  }
+}
+
+.footer .footer_wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media screen and (max-width: 640px) {
+  .footer .footer_wrap {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.footer .footer_wrap .footer_menu a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 23px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.125em;
+  line-height: 1.375em;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 1000px) {
+  .footer .footer_wrap .footer_menu {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .footer .footer_wrap .footer_logo {
+    width: 280px;
+    padding-bottom: 25px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .footer .footer_wrap .footer_logo img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .footer .footer_wrap .footer_bank_info {
+    display: none;
+  }
+}
+
+.footer .footer_wrap .footer_heading {
+  padding-bottom: 16px;
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 1.5em;
+  line-height: 1.813em;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 640px) {
+  .footer .footer_wrap .footer_heading {
+    padding-bottom: 30px;
+    font-size: 1.125em;
+    line-height: 1.3125em;
+  }
+}
+
+.footer .footer_wrap .footer_data, .footer .footer_wrap a {
+  padding-bottom: 16px;
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 1.125em;
+  line-height: 1.375em;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 640px) {
+  .footer .footer_wrap .footer_data, .footer .footer_wrap a {
+    padding-bottom: 10px;
+    font-size: 0.75em;
+    line-height: 0.9375em;
+  }
+}
+
+.footer .footer_wrap .footer_link_to_bank_data a {
+  display: none;
+}
+
+@media screen and (max-width: 1000px) {
+  .footer .footer_wrap .footer_link_to_bank_data a {
+    display: inline-block;
+    padding-bottom: 16px;
+    font-family: Montserrat;
+    font-weight: 700;
+    font-size: 1.125em;
+    line-height: 1.375em;
+    color: #ffffff;
+    text-decoration: none;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .footer .footer_wrap .footer_link_to_bank_data a {
+    padding-bottom: 10px;
+    font-size: 0.875em;
+    line-height: 1.0625em;
+  }
+}
+
+.footer .footer_wrap .footer_contact_info {
+  text-align: right;
+}
+
+@media screen and (max-width: 640px) {
+  .footer .footer_wrap .footer_contact_info {
+    width: 280px;
+    text-align: left;
+  }
+}
+
+.footer .footer_wrap .footer_contact_info .footer_icons {
+  padding-top: 52px;
+}
+
+@media screen and (max-width: 640px) {
+  .footer .footer_wrap .footer_contact_info .footer_icons {
+    padding: 35px 0;
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .footer .footer_wrap .footer_contact_info .footer_icons img {
+    width: 25px;
+    height: 25px;
+  }
+}
+
+.footer .footer_wrap .footer_contact_info .footer_icons .footer_fb_icon {
+  padding-right: 29px;
+}
+
+@media screen and (max-width: 640px) {
+  .footer .footer_wrap .footer_contact_info .footer_icons .footer_fb_icon {
+    padding-right: 35px;
+  }
+}
+
+.footer .footer_policy {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer .footer_policy .footer_policy_left, .footer .footer_policy .footer_policy_right, .footer .footer_policy a {
+  padding-bottom: 13px;
+  font-family: Montserrat;
+  font-weight: 500;
+  font-size: 0.875em;
+  line-height: 1.063em;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 1000px) {
+  .footer .footer_policy .footer_policy_left, .footer .footer_policy .footer_policy_right, .footer .footer_policy a {
+    padding-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .footer .footer_policy .footer_policy_left, .footer .footer_policy .footer_policy_right, .footer .footer_policy a {
+    padding-bottom: 0px;
+  }
+}
+
+.footer .footer_policy .footer_policy_left {
+  width: 182px;
+}
+
+@media screen and (max-width: 768px) {
+  .footer .footer_policy .footer_policy_left {
+    width: 395px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .footer .footer_policy .footer_policy_left {
+    width: 280px;
+    padding-bottom: 5px;
+  }
+}
+
+.footer .footer_policy .footer_policy_right {
+  text-align: right;
+}
+
+@media screen and (max-width: 640px) {
+  .footer .footer_policy .footer_policy_right {
+    width: 280px;
+    text-align: left;
+    padding-bottom: 20px;
+  }
+}
+/*# sourceMappingURL=footer.css.map */

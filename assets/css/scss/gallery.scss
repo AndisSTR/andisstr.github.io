@@ -1,0 +1,45 @@
+// Import Styles
+
+@import 'colors';
+@import 'fonts';
+@import 'media_queries';
+
+// -----------------
+
+// Styles
+.gallery_wrap{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    align-items: center; 
+    justify-content: center;
+    padding:0px;
+    .gallery_column{
+        flex: 25%;
+        max-width: 25%;
+        img{
+            width:100%;
+            display:block;
+        }
+        @include tablet {
+            flex: 50%;
+            max-width: 50%;
+        }
+        @include mobile {
+            flex: 50%;
+            max-width: 50%;
+        }
+    }
+    .gallery_top_border {
+        position: absolute;
+        top: 0px;
+        width: 100%;
+        height: 55px;
+    }
+    .gallery_bottom_border {
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+        height: 55px;
+    }
+}
