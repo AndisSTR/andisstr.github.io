@@ -25,6 +25,11 @@ main{
             text-align: center;
             color: $blue;
         }
+        .text1 {
+            margin-bottom:90px;
+            font-size: 24px;
+            line-height: 29px;
+        }
         .picture_container {
             margin-bottom:150px;
             display: flex;
@@ -32,7 +37,7 @@ main{
             position: relative;
             width: 100%;
             height: 705px;
-            background: url('/assets/img/juris.jpg');
+            background: url('/assets/img/Juris.jpg');
             &::before, &::after{
                 content: "";
                 width: 100%;
@@ -87,6 +92,31 @@ main{
                     .right_arrow {
                         transform: rotate(180deg);
                     }
+                }
+            }
+        }
+        .main_dream_box {
+            width: 100%;
+            display: flex;
+            justify-content: space-around;
+            margin:0 168px 150px 168px;
+            .main_dream_box_cell{
+                position: relative;
+                max-width: 394px;
+                height: 595px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                img {
+                    height: 198px;
+                    margin-bottom: 60px;
+                }
+                h2 {
+                    margin-bottom: 32px;
+                }
+                .button {
+                    position: absolute;
+                    bottom: 0;
                 }
             }
         }

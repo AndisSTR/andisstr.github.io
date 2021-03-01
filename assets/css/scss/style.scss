@@ -32,10 +32,17 @@ h1 {
     line-height: 71px;
     color: $blue;
 }
+h2 {
+    font-family: Oswald;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 44px;
+    color: $blue;
+}
 h3 {
     font-family: Oswald;
     font-weight: 500;
-    font-size: 23px;
+    font-size: 24px;
     line-height: 36px;
     color: $blue;
 }
@@ -139,7 +146,9 @@ h3 {
         padding:0 20px;
     }
     .dream_box_cell {
-        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         p {
             text-transform: uppercase;
             height: 80px;
@@ -147,7 +156,6 @@ h3 {
             font-weight: 500;
             font-size: 1.5em;
             line-height: 2.25em;
-            text-align: center;
             color:$blue;
             @include tablet {
                 width: 233px;
@@ -155,26 +163,19 @@ h3 {
                 height: 104px;
             }
         }
-        .button {
-            margin:7px 0 133px 0;
-            @include mobile {
-                margin-bottom: 120px;
-            }
-        }
     }
-
 }
 
-.button, .form_button {
+.button {
     max-width:233px;
     font-family: Montserrat;
-    font-weight: 500;
-    font-size: 1.125em;
     height: 50px;
-    line-height: 1.375em;
-    padding: 12px 52px;
-    display: inline-block;
-    text-align: center;
+    font-size: 18px;
+    line-height: 22px;
+    padding: 0 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-decoration: none;
     border-radius: 50px;
     color: $white;

@@ -50,6 +50,12 @@ main .main .about {
   color: #2f4858;
 }
 
+main .main .text1 {
+  margin-bottom: 90px;
+  font-size: 24px;
+  line-height: 29px;
+}
+
 main .main .picture_container {
   margin-bottom: 150px;
   display: -webkit-box;
@@ -61,7 +67,7 @@ main .main .picture_container {
   position: relative;
   width: 100%;
   height: 705px;
-  background: url("/assets/img/juris.jpg");
+  background: url("/assets/img/Juris.jpg");
 }
 
 main .main .picture_container::before, main .main .picture_container::after {
@@ -139,5 +145,45 @@ main .main .citation .citation_wrapper .arrow_buttons_container {
 main .main .citation .citation_wrapper .arrow_buttons_container .right_arrow {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
+}
+
+main .main .main_dream_box {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 0 168px 150px 168px;
+}
+
+main .main .main_dream_box .main_dream_box_cell {
+  position: relative;
+  max-width: 394px;
+  height: 595px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .main .main_dream_box .main_dream_box_cell img {
+  height: 198px;
+  margin-bottom: 60px;
+}
+
+main .main .main_dream_box .main_dream_box_cell h2 {
+  margin-bottom: 32px;
+}
+
+main .main .main_dream_box .main_dream_box_cell .button {
+  position: absolute;
+  bottom: 0;
 }
 /*# sourceMappingURL=main.css.map */
