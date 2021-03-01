@@ -45,11 +45,12 @@
   text-decoration: none;
   position: relative;
   padding-left: 62px;
-  padding-top: -50px;
+  top: -20px;
 }
 
 .navbar .logo img {
   width: 159px;
+  height: 159px;
 }
 
 @media screen and (max-width: 640px) {
@@ -145,5 +146,9 @@
   .navbar .navbar_menu .navbar_menu_link {
     display: none;
   }
+}
+
+.navbar .navbar_menu .last {
+  margin-left: 28px;
 }
 /*# sourceMappingURL=navbar.css.map */

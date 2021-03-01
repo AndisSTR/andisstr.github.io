@@ -3,6 +3,7 @@
 @import 'navbar';
 @import 'colors';
 @import 'fonts';
+@import 'main';
 @import 'gallery';
 @import 'media_queries';
 @import 'contact_form';
@@ -24,7 +25,22 @@ html {
     font-size: 100%;
 }
 
-.header, .video, .site_desc, .gallery, .dream_box, .supporters, .footer { 
+h1 {
+    font-family: Oswald;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 71px;
+    color: $blue;
+}
+h3 {
+    font-family: Oswald;
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 36px;
+    color: $blue;
+}
+
+.header, .main, .video, .site_desc, .gallery, .dream_box, .supporters, .footer { 
 	max-width:1366px; 
     margin: 0 auto; 
     @include tablet {
@@ -41,7 +57,7 @@ html {
     box-sizing: border-box;
     .header_border {
         position: absolute;
-        top: 92px;
+        top: 85px;
         width: 100%;
         height: 35px;
         @include tablet {
@@ -53,17 +69,18 @@ html {
     }
 }
 
-.video {
+.video_section {
     z-index: -1;
     top: -45px;
     width: 100%;
-    height: 722px;
+    height: 640px;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url("/assets/img/Sparkle Video 1.jpg");
-    background-repeat:no-repeat;
-    background-size: 100% 100%;
+    .video {
+        position:absolute;
+        z-index: -1;
+    }
     @include small_screen {
         height: 564px;
     }
@@ -84,17 +101,18 @@ html {
 }
 
 .site_desc {
-    margin-top: 150px;
+    margin-top: 186px;
     margin-bottom: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
     p {
+        padding-left:5px;
         color:$blue;
         font-size: 1.125em;
         text-align: center;
         width: 654px;
-        line-height: 1.375em;
+        line-height: 22px;
         @include mobile {
             font-size: 0.75em;
         }
@@ -110,7 +128,9 @@ html {
 }
 
 .dream_box {
-    margin-top: 150px;
+    margin-top: 158px;
+    padding-left: 180px;
+    padding-right: 125px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -136,7 +156,7 @@ html {
             }
         }
         .button {
-            margin-bottom: 150px;
+            margin:7px 0 133px 0;
             @include mobile {
                 margin-bottom: 120px;
             }

@@ -26,9 +26,10 @@
         text-decoration: none;
         position: relative;
         padding-left: 62px;
-        padding-top: -50px;
+        top: -20px;
         img{
             width:159px;
+            height: 159px;
             @include mobile {
                 width:78px;
             }
@@ -94,6 +95,9 @@
             @include less_than_max_width {
                     display: none;
             }
+        }
+        .last {
+            margin-left: 28px;
         }
     }
 }

@@ -5,10 +5,19 @@
 @import 'media_queries';
 
 .footer {
-    background: $blue;
-    padding: 40px 62px 0 62px;
+    position: relative;
+    height: 376px;
     @include mobile {
         padding: 40px 20px 0 20px;
+    }
+    .footer_top {
+        width: 100%;
+        height: 52px;
+        background: url('/assets/img/footer_border.png');
+    }
+    .footer_content {
+        background: $blue;
+        padding: 0 62px;
     }
     .footer_wrap {
         display: flex;
