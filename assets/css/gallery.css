@@ -18,61 +18,52 @@
 
 .gallery_wrap {
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap-reverse;
-      flex-wrap: wrap-reverse;
+  display: -ms-grid;
+  display: grid;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 0px;
+  -ms-grid-columns: 24% 25% 22% 29%;
+      grid-template-columns: 24% 25% 22% 29%;
+  max-width: 1366px;
+  height: auto;
 }
 
-.gallery_wrap .gallery_column {
-  -webkit-box-flex: 25%;
-      -ms-flex: 25%;
-          flex: 25%;
-  max-width: 25%;
-}
-
-.gallery_wrap .gallery_column img {
-  width: 100%;
-  display: block;
-}
-
-@media screen and (max-width: 768px) {
-  .gallery_wrap .gallery_column {
-    -webkit-box-flex: 50%;
-        -ms-flex: 50%;
-            flex: 50%;
-    max-width: 50%;
-  }
-}
-
-@media screen and (max-width: 640px) {
-  .gallery_wrap .gallery_column {
-    -webkit-box-flex: 50%;
-        -ms-flex: 50%;
-            flex: 50%;
-    max-width: 50%;
-  }
-}
-
-.gallery_wrap .gallery_top_border {
+.gallery_wrap:before {
+  content: "";
   position: absolute;
   top: 0px;
   width: 100%;
   height: 55px;
+  background: url("/assets/img/ripped 6 8.svg");
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
-.gallery_wrap .gallery_bottom_border {
+.gallery_wrap:after {
+  content: "";
   position: absolute;
   bottom: 0px;
   width: 100%;
   height: 55px;
+  background: url("/assets/img/ripped 6 8.svg");
+}
+
+.gallery_wrap img {
+  width: 100%;
+  height: auto;
+}
+
+.gallery_wrap .cell3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=gallery.css.map */

@@ -9,37 +9,35 @@
 // Styles
 .gallery_wrap{
     position: relative;
-    display: flex;
-    flex-wrap: wrap-reverse;
-    align-items: center; 
-    justify-content: center;
-    padding:0px;
-    .gallery_column{
-        flex: 25%;
-        max-width: 25%;
-        img{
-            width:100%;
-            display:block;
-        }
-        @include tablet {
-            flex: 50%;
-            max-width: 50%;
-        }
-        @include mobile {
-            flex: 50%;
-            max-width: 50%;
-        }
-    }
-    .gallery_top_border {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 24% 25% 22% 29%;
+    max-width: 1366px;
+    height: auto;
+    &:before {
+        content: "";
         position: absolute;
         top: 0px;
         width: 100%;
         height: 55px;
+        background: url('/assets/img/ripped 6 8.svg');
+        transform: rotate(180deg);
     }
-    .gallery_bottom_border {
+    &:after {
+        content: "";
         position: absolute;
         bottom: 0px;
         width: 100%;
         height: 55px;
+        background: url('/assets/img/ripped 6 8.svg');
+    }
+    img {
+        width: 100%;
+        height:auto;
+    }
+    .cell3 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
