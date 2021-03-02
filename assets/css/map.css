@@ -1,0 +1,88 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: url("/assets/fonts/Montserrat-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("/assets/fonts/Montserrat-Medium.ttf") format("truetype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Oswald';
+  src: url("/assets/fonts/Oswald-Medium.ttf") format("truetype");
+  font-weight: 500;
+}
+
+.map_form .select_options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 25px;
+}
+
+.map_form .select_options .select_option_cell:nth-child(1) {
+  margin-right: 30px;
+}
+
+.map_form .select_options .select_option_cell .option_cell_tilte {
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: -0.015em;
+  color: #ffa800;
+  margin-bottom: 15px;
+}
+
+.map_form .select_options .select_option_cell .select_box {
+  width: 288px;
+  height: 43px;
+}
+
+.map_form .map_section {
+  position: relative;
+  height: 640px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.map_form .map_section .map {
+  position: absolute;
+  bottom: -45px;
+  z-index: -1;
+}
+
+.map_form .map_section .map_controller {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  bottom: 56px;
+  right: 67px;
+}
+/*# sourceMappingURL=map.css.map */

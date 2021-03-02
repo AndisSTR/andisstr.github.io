@@ -1,0 +1,46 @@
+// Import Styles
+
+@import 'colors';
+@import 'fonts';
+@import 'media_queries';
+
+// -----------------
+
+// Styles
+.video_section {
+    top: -45px;
+    height: 640px;
+    @include small_screen {
+        height: 564px;
+    }
+    @include tablet {
+        height: 406px;
+    }
+    @include mobile {
+        height: 169px;
+    }
+}
+.video_section2 {
+    position: relative;
+    margin-top: 7px;
+    margin-bottom: 150px;
+    height: 769px;
+}
+.video_section, .video_section2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .video {
+        position:absolute;
+        z-index: -1;
+    }
+    .play_video_image {
+        img{
+            @include mobile {
+                width: 50px;
+                height: 50px;
+            }
+        }
+    }
+}

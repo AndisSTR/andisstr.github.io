@@ -5,7 +5,7 @@
 @import 'media_queries';
 
 main{
-    margin: 100px 0 150px 0;
+    margin: 112px 0 150px 0;
     .main {
         display: flex;
         flex-direction: column;
@@ -13,10 +13,10 @@ main{
         h1 {
             margin-bottom:60px;
         }
-        .about {
-            margin-bottom:150px;
+        .about, .about2 {
             width: 606px;
-            height: 112px;
+        }
+        .about, .about2, .about3 {
             font-family: Montserrat;
             font-style: normal;
             font-weight: normal;
@@ -24,6 +24,13 @@ main{
             line-height: 22px;
             text-align: center;
             color: $blue;
+        }
+        .about {
+            margin-bottom:150px;
+            height: 112px;
+        }
+        .about3 {
+            width: 60%;
         }
         .text1 {
             margin-bottom:90px;
@@ -99,7 +106,7 @@ main{
             width: 100%;
             display: flex;
             justify-content: space-around;
-            margin:0 168px 150px 168px;
+            margin:0 168px 0px 168px;
             .main_dream_box_cell{
                 position: relative;
                 max-width: 394px;
@@ -118,6 +125,119 @@ main{
                     position: absolute;
                     bottom: 0;
                 }
+            }
+        }
+        .margin_bot_150{
+            margin-bottom: 150px;
+        }
+        .objective, .mission, .yellow_box, .dream_select{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            color: $blue;
+        }
+        .objective {
+            h2 {
+                margin-bottom: 90px;
+            }
+            .objective_cell {
+                display: flex;
+                align-items: center;
+                &:nth-child(2) {
+                    margin-left: 92px;
+                    margin-bottom: 100px;
+                }
+                &:nth-child(3) {
+                    margin-right: 304px;
+                    margin-bottom: 112px;
+                }
+                &:nth-child(4) {
+                    margin-left: 92px;
+                }
+                .objective_text_left, .objective_text_right {
+                    font-size: 18px;
+                    line-height: 22px;
+                    color: $blue;
+                }
+                .objective_text_right {
+                    max-width: 550px;
+                    padding-left: 62px;
+                }
+                .objective_text_left {
+                    max-width: 550px;
+                    padding-right: 67px;
+                    text-align: right;
+                }
+            }
+        }
+        .mission {
+            h2 {
+                margin-top: 4px;
+                margin-bottom: 50px;
+            }
+            .text1 {
+                margin-bottom:0px;
+            }
+        }
+        .yellow_box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            width: 100%;
+            height: 533px;
+            background: url("/assets/img/yellow_box.png");
+            img {
+                margin-bottom: 40px;
+            }
+            .yellow_box_text1, .yellow_box_text2 {
+                text-align: center;
+                color: $white;
+                font-size: 24px;
+                line-height: 29px;
+                margin-bottom: 20px;
+            }
+            .yellow_box_text1 {
+                width: 62%;
+            }
+            .yellow_box_text2 {
+                width: 74%;
+            }
+        }
+        .dream_select {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+
+            h2 {
+                margin-bottom: 90px;
+            }
+            .dream_select_wrapper {
+                width: 78%;
+                display: flex;
+                justify-content: space-around;
+                align-items: flex-start;
+                .dream_select_box {
+                    width: 288px;
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+
+                    .dream_select_image{
+                        width:100%;
+                        height: 150px;
+                        display: flex;
+                        align-items: flex-end;
+                        img {
+                            width:100%;
+                            margin-bottom: 30px;
+                        }
+                    }
+                    .text1{
+                        text-align: center;
+                        margin-bottom:0px;
+                    }
+                }   
             }
         }
     }

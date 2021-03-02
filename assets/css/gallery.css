@@ -16,20 +16,19 @@
   font-weight: 500;
 }
 
-.gallery_wrap {
+.gallery_wrap, .gallery_wrap2 {
+  margin-bottom: 150px;
   position: relative;
   display: -ms-grid;
   display: grid;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-grid-columns: 24% 25% 22% 29%;
-      grid-template-columns: 24% 25% 22% 29%;
   max-width: 1366px;
   height: auto;
 }
 
-.gallery_wrap:before {
+.gallery_wrap:before, .gallery_wrap2:before {
   content: "";
   position: absolute;
   top: 0px;
@@ -40,7 +39,7 @@
           transform: rotate(180deg);
 }
 
-.gallery_wrap:after {
+.gallery_wrap:after, .gallery_wrap2:after {
   content: "";
   position: absolute;
   bottom: 0px;
@@ -49,12 +48,12 @@
   background: url("/assets/img/ripped 6 8.svg");
 }
 
-.gallery_wrap img {
+.gallery_wrap img, .gallery_wrap2 img {
   width: 100%;
   height: auto;
 }
 
-.gallery_wrap .cell3 {
+.gallery_wrap .cell3, .gallery_wrap2 .cell3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -65,5 +64,15 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.gallery_wrap {
+  -ms-grid-columns: 24% 25% 22% 29%;
+      grid-template-columns: 24% 25% 22% 29%;
+}
+
+.gallery_wrap2 {
+  -ms-grid-columns: 21% 22% 22% 35%;
+      grid-template-columns: 21% 22% 22% 35%;
 }
 /*# sourceMappingURL=gallery.css.map */

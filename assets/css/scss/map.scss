@@ -1,0 +1,55 @@
+// Import Styles
+
+@import 'colors';
+@import 'fonts';
+@import 'media_queries';
+
+// -----------------
+
+// Styles
+.map_form{
+    .select_options {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 25px;
+        .select_option_cell {
+            &:nth-child(1) {
+                margin-right: 30px;
+            }
+            .option_cell_tilte {
+                font-size: 18px;
+                line-height: 22px;
+                letter-spacing: -0.015em;
+                color: $orange;
+                margin-bottom: 15px;
+            }
+            .select_box {
+                width: 288px;
+                height: 43px;
+            }
+        }
+    }
+    .map_section{
+        position: relative;
+        height: 640px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .map {
+            position:absolute;
+            bottom: -45px;
+            z-index: -1;
+        }
+        .map_controller {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            position:absolute;
+            bottom: 56px;
+            right: 67px;
+        }
+    }
+}

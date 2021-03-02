@@ -17,7 +17,7 @@
 }
 
 main {
-  margin: 100px 0 150px 0;
+  margin: 112px 0 150px 0;
 }
 
 main .main {
@@ -37,10 +37,11 @@ main .main h1 {
   margin-bottom: 60px;
 }
 
-main .main .about {
-  margin-bottom: 150px;
+main .main .about, main .main .about2 {
   width: 606px;
-  height: 112px;
+}
+
+main .main .about, main .main .about2, main .main .about3 {
   font-family: Montserrat;
   font-style: normal;
   font-weight: normal;
@@ -48,6 +49,15 @@ main .main .about {
   line-height: 22px;
   text-align: center;
   color: #2f4858;
+}
+
+main .main .about {
+  margin-bottom: 150px;
+  height: 112px;
+}
+
+main .main .about3 {
+  width: 60%;
 }
 
 main .main .text1 {
@@ -154,7 +164,7 @@ main .main .main_dream_box {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  margin: 0 168px 150px 168px;
+  margin: 0 168px 0px 168px;
 }
 
 main .main .main_dream_box .main_dream_box_cell {
@@ -185,5 +195,176 @@ main .main .main_dream_box .main_dream_box_cell h2 {
 main .main .main_dream_box .main_dream_box_cell .button {
   position: absolute;
   bottom: 0;
+}
+
+main .main .margin_bot_150 {
+  margin-bottom: 150px;
+}
+
+main .main .objective, main .main .mission, main .main .yellow_box, main .main .dream_select {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: #2f4858;
+}
+
+main .main .objective h2 {
+  margin-bottom: 90px;
+}
+
+main .main .objective .objective_cell {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .main .objective .objective_cell:nth-child(2) {
+  margin-left: 92px;
+  margin-bottom: 100px;
+}
+
+main .main .objective .objective_cell:nth-child(3) {
+  margin-right: 304px;
+  margin-bottom: 112px;
+}
+
+main .main .objective .objective_cell:nth-child(4) {
+  margin-left: 92px;
+}
+
+main .main .objective .objective_cell .objective_text_left, main .main .objective .objective_cell .objective_text_right {
+  font-size: 18px;
+  line-height: 22px;
+  color: #2f4858;
+}
+
+main .main .objective .objective_cell .objective_text_right {
+  max-width: 550px;
+  padding-left: 62px;
+}
+
+main .main .objective .objective_cell .objective_text_left {
+  max-width: 550px;
+  padding-right: 67px;
+  text-align: right;
+}
+
+main .main .mission h2 {
+  margin-top: 4px;
+  margin-bottom: 50px;
+}
+
+main .main .mission .text1 {
+  margin-bottom: 0px;
+}
+
+main .main .yellow_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 533px;
+  background: url("/assets/img/yellow_box.png");
+}
+
+main .main .yellow_box img {
+  margin-bottom: 40px;
+}
+
+main .main .yellow_box .yellow_box_text1, main .main .yellow_box .yellow_box_text2 {
+  text-align: center;
+  color: #ffffff;
+  font-size: 24px;
+  line-height: 29px;
+  margin-bottom: 20px;
+}
+
+main .main .yellow_box .yellow_box_text1 {
+  width: 62%;
+}
+
+main .main .yellow_box .yellow_box_text2 {
+  width: 74%;
+}
+
+main .main .dream_select {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
+main .main .dream_select h2 {
+  margin-bottom: 90px;
+}
+
+main .main .dream_select .dream_select_wrapper {
+  width: 78%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+main .main .dream_select .dream_select_wrapper .dream_select_box {
+  width: 288px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main .main .dream_select .dream_select_wrapper .dream_select_box .dream_select_image {
+  width: 100%;
+  height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+main .main .dream_select .dream_select_wrapper .dream_select_box .dream_select_image img {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+main .main .dream_select .dream_select_wrapper .dream_select_box .text1 {
+  text-align: center;
+  margin-bottom: 0px;
 }
 /*# sourceMappingURL=main.css.map */

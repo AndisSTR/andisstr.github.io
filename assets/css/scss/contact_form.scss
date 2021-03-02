@@ -8,15 +8,11 @@
 
 // Contact us Form
 .contact_us {
-    p {
-        text-transform: uppercase;
-        font-family: Oswald;
-        font-weight: 500;
-        font-size: 1.875em;
-        line-height: 2.75em;
+    .form_header {
         text-align: center;
-        color: $blue;
-        margin-bottom: 44px;
+    }
+    h2 {
+        margin-bottom: 60px;
         @include mobile {
             margin-bottom: 30px;
         }
@@ -109,13 +105,23 @@
             border: 0px;
             border-radius: 6px;
             color: $blue;
-            font-size: 1.125em;
+            font-size: 18px;
             line-height: 1.375em;
             letter-spacing: -0.015em;
             @include mobile {
                 font-size: 0.875em;
                 line-height: 1.0625em;
             }
+        }
+        ::placeholder {
+            color: $blue;
+            opacity: 1;
+        }
+        :-ms-input-placeholder {
+            color: $blue;
+        }
+        ::-ms-input-placeholder {
+            color: $blue;
         }
         .desc_area {
             width: 612px;
@@ -132,6 +138,7 @@
             font-weight: normal;
             font-size: 0.875em;
             line-height: 1.063em;
+            color: $blue;
             @include mobile {
                 font-size: 0.75em;
                 line-height: 0.9em;
@@ -148,16 +155,67 @@
                 padding: 10px 0 50px 0;
                 width: 280px;
             }
-            .form_check_desc {
-                padding-left: 12px;
-                @include mobile {
-                    padding-left: 21px;
-                }
+            .checkbox_container {
+                display: block;
+                position: relative;
+                padding-left: 37px;
+                cursor: pointer;
+                font-size: 14px;
+                -webkit-user-select: none;
+                -moz-user-select: none;
+                -ms-user-select: none;
+                user-select: none;
             }
-            input[type=checkbox] {
+            .checkbox_container input {
+                position: absolute;
+                opacity: 0;
+                cursor: pointer;
+                height: 0;
+                width: 0;
+            }
+            .checkmark {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 16px;
+                height: 16px;
+                border-radius: 3px;
                 background: $grey;
-                outline: 0;
             }
+            .checkbox_container input:checked ~ .checkmark {
+                background-color: $blue;
+              }
+            .checkmark:after {
+                content: "";
+                position: absolute;
+                display: none;
+            }
+            .checkbox_container input:checked ~ .checkmark:after {
+                display: block;
+            }
+            .checkbox_container .checkmark:after {
+                left: 5px;
+                top: 1px;
+                width: 4px;
+                height: 8px;
+                border: solid $white;
+                border-width: 0 2px 2px 0;
+                -webkit-transform: rotate(45deg);
+                -ms-transform: rotate(45deg);
+                transform: rotate(45deg);
+              }
+        }
+        .form_button {
+            cursor: pointer;
+            width: 182px;
+            height: 62px;
+            font-size: 24px;
+            line-height: 40px;
+            color:$white;
+            background: $orange;
+            outline: 0;
+            border: 0;
+            border-radius: 62px;
         }
     }
 }

@@ -1,0 +1,73 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: url("/assets/fonts/Montserrat-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("/assets/fonts/Montserrat-Medium.ttf") format("truetype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Oswald';
+  src: url("/assets/fonts/Oswald-Medium.ttf") format("truetype");
+  font-weight: 500;
+}
+
+.video_section {
+  top: -45px;
+  height: 640px;
+}
+
+@media screen and (max-width: 1000px) {
+  .video_section {
+    height: 564px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .video_section {
+    height: 406px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .video_section {
+    height: 169px;
+  }
+}
+
+.video_section2 {
+  position: relative;
+  margin-top: 7px;
+  margin-bottom: 150px;
+  height: 769px;
+}
+
+.video_section, .video_section2 {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.video_section .video, .video_section2 .video {
+  position: absolute;
+  z-index: -1;
+}
+
+@media screen and (max-width: 640px) {
+  .video_section .play_video_image img, .video_section2 .play_video_image img {
+    width: 50px;
+    height: 50px;
+  }
+}
+/*# sourceMappingURL=video.css.map */
