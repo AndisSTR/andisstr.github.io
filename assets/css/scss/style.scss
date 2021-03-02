@@ -51,7 +51,7 @@ h3 {
     color: $blue;
 }
 
-.header, .main, .video, .site_desc, .gallery, .dream_box, .supporters, .footer, .map_form { 
+.header, .main, .video, .site_desc, .gallery, .dream_box, .supporters, .footer, .map_form, .story_grallery, .team { 
 	max-width:1366px; 
     margin: 0 auto; 
     @include tablet {
@@ -149,6 +149,56 @@ h3 {
     background: $orange;
     &:hover {
         background: $yellow;
+    }
+}
+
+.team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:0 168px 150px 168px;
+    .team_header {
+        margin-bottom: 60px;
+        text-align: center;
+        h2{
+            margin-bottom: 30px;
+        }
+        p {
+            color: $blue;
+        }
+    }
+    .team_members {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        .team_members_cell {
+            position: relative;
+            width: 289px;
+            height: 365px;
+            .member_image {
+                z-index: -1;
+                position: absolute;
+            }
+            .members_data {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                width: 100%;
+                position: absolute;
+                bottom: 20px;
+                h3 {
+                    color: $white;
+                }
+                p {
+                    font-size: 18px;
+                    width: 90%;
+                    color: $white;
+                }
+            }
+        }
     }
 }
 

@@ -691,6 +691,58 @@ main .main .dream_select .dream_select_wrapper .dream_select_box .text1 {
       grid-template-columns: 21% 22% 22% 35%;
 }
 
+.story_grallery .story_grallery_header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 112px 0 150px 0;
+}
+
+.story_grallery .story_grallery_header h1 {
+  margin-bottom: 60px;
+}
+
+.story_grallery .story_grallery_header .text1 {
+  color: #2f4858;
+  margin-bottom: 0px;
+}
+
+.story_grallery .story_gallery_wrap {
+  margin: 0 168px 150px 168px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
+  -ms-grid-rows: (1fr)[17];
+      grid-template-rows: repeat(17, 1fr);
+  grid-column-gap: 14px;
+  grid-row-gap: 14px;
+}
+
+.story_grallery .story_gallery_wrap .story_gallery_cell {
+  position: relative;
+  width: 160px;
+  height: 160px;
+  background: url("/assets/img/story_gallery_cell.jpg");
+}
+
+.story_grallery .story_gallery_wrap .story_gallery_cell .cell_number {
+  position: absolute;
+  bottom: -9px;
+  right: 14px;
+  font-family: Oswald;
+  font-weight: 700;
+  font-size: 36px;
+  color: #ffffff;
+}
+
 @font-face {
   font-family: 'Montserrat';
   src: url("/assets/fonts/Montserrat-Regular.ttf") format("truetype");
@@ -1540,13 +1592,13 @@ h3 {
   color: #2f4858;
 }
 
-.header, .main, .video, .site_desc, .gallery, .dream_box, .supporters, .footer, .map_form {
+.header, .main, .video, .site_desc, .gallery, .dream_box, .supporters, .footer, .map_form, .story_grallery, .team {
   max-width: 1366px;
   margin: 0 auto;
 }
 
 @media screen and (max-width: 768px) {
-  .header, .main, .video, .site_desc, .gallery, .dream_box, .supporters, .footer, .map_form {
+  .header, .main, .video, .site_desc, .gallery, .dream_box, .supporters, .footer, .map_form, .story_grallery, .team {
     max-width: 768px;
   }
 }
@@ -1698,5 +1750,85 @@ h3 {
 
 .button:hover {
   background: #ffcb66;
+}
+
+.team {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 168px 150px 168px;
+}
+
+.team .team_header {
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.team .team_header h2 {
+  margin-bottom: 30px;
+}
+
+.team .team_header p {
+  color: #2f4858;
+}
+
+.team .team_members {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.team .team_members .team_members_cell {
+  position: relative;
+  width: 289px;
+  height: 365px;
+}
+
+.team .team_members .team_members_cell .member_image {
+  z-index: -1;
+  position: absolute;
+}
+
+.team .team_members .team_members_cell .members_data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  bottom: 20px;
+}
+
+.team .team_members .team_members_cell .members_data h3 {
+  color: #ffffff;
+}
+
+.team .team_members .team_members_cell .members_data p {
+  font-size: 18px;
+  width: 90%;
+  color: #ffffff;
 }
 /*# sourceMappingURL=style.css.map */
