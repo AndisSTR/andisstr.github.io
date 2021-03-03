@@ -70,10 +70,29 @@
         grid-column-gap: 14px;
         grid-row-gap: 14px;
         .story_gallery_cell {
+            display: flex;
+            justify-content: center;
+            align-items: center;
             position: relative;
-            width: 160px;
-            height: 160px;
             background: url('/assets/img/story_gallery_cell.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            img {
+                width: 100%;
+                height: 100%;
+                opacity: 0.5;
+            }
+            h3, p {
+                text-align: center;
+                color: $white;
+            }
+            p {
+                font-family: Oswald;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 18px;
+                line-height: 27px;
+            }
             .cell_number {
                 position: absolute;
                 bottom: -9px;
